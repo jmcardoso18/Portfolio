@@ -2,6 +2,14 @@
 <html lang="pt-br">
 
 <head>
+
+    <!-- Servidores de Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,7 +21,8 @@
 
     <!--1 Favicon-->
     <link rel="icon" type="image/svg+xml" href="Portfolio/assets/img/favicon.svg">
-
+    <!-- Link para o arquivo CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Portfólio da Mila</title>
 </head>
@@ -28,9 +37,9 @@
             </div>
             <nav>
                 <ul class="flex menu_list">
-                    <li><a href="#hero">Início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="index.html#hero">Início</a></li>
+                    <li><a href="index.html#about">Sobre</a></li>
+                    <li><a href="index.html#contact">Contato</a></li>
                 </ul>
             </nav>
         </article>
@@ -39,23 +48,27 @@
     <!--Área Principal do Site-->
     <main>
 
-        <section id="sucess" class="about_container">
+        <section id="sucess" class="sucess_container">
 
-            <article class="about_content" style="text-align: center;">
+            <article class="sucess_content" style="text-align: center;">
+                <figure class="sucess_image">
+                    <img src="assets/img/sucess.svg"
+                        alt="Imagem de ok sinalizando que o envio do formulário foi realizado com sucesso">
+                </figure>
                 <h1>E-mail enviado com sucesso!</h1>
                 <p> Obrigada por entrar em contato!!</p>
                 <p>Logo mais retornarei a sua mensagem</p>
 
-                    <a href="index.html" target="_blank" class="botao">Voltar para o Início</a>
+                <a href="index.html" target="_blank" class="botao">Voltar para o Início</a>
             </article>
         </section>
 
     </main>
 
     <!--Rodapé-->
-    <br text-align="center" class="footer_container">
-</br>
-        Feito com ❤️ por Jamila Moraes Cardoso - 2025 
+    <footer>
+        Feito com ❤️ por Jamila Moraes Cardoso - 2025
     </footer>
 </body>
+
 </html>
