@@ -65,32 +65,7 @@
 
         <section id="about" class="about_container">
 
-            <figure class="about_image">
-                <img src="https://avatars.githubusercontent.com/u/12092301?s=400&u=37e0c9f77426b6056443385f7a4380e5086a323e&v=4" alt="Foto da pessoa desenvolvedora">
-            </figure>
-
-            <article class="about_content">
-                <h2>Sobre Mim</h2>
-                <p>Sou Jamila M. Cardoso, uma desenvolvedora Full Stack apaixonada por tecnologia e inovação. Com
-                    experiência em diversas linguagens de programação e frameworks, estou sempre em busca de novos
-                    desafios para aprimorar minhas habilidades e contribuir para projetos impactantes. Formada pela 
-                    <a href="https://brazil.generation.org/" target="_blank">Generation Brazil</a></p>
-                <p>Minha missão é transformar ideias em soluções digitais eficientes e acessíveis, proporcionando uma
-                    experiência única aos usuários. Vamos trabalhar juntos para criar algo incrível!</p>
-
-                <div class="about_stats">
-                    <a href="https://github.com/jmcardoso18" target="_blank" class="botao">Ver GitHub</a>
-                    <div class="stat-item">
-                        <p class="stat-numer">100</p>
-                        <p class="stat-label">Seguidores</p>
-                    </div>
-                    <div class="stat-item">
-                        <p class="stat-numer">500</p>
-                        <p class="stat-label">Repositórios</p>
-                    </div>
-                </div>
-
-            </article>
+            
         </section>
 
         <section id="contact" class="contact_container">
@@ -108,14 +83,18 @@
                 </div>
             </article>
 
-            <form id="formulario">
+            <form action="https://formsubmit.co/6bff33af4c7f1b054efb441c1494fe16" method="POST"id="formulario">
+                <!-- Redirecionar para a página de sucesso após o envio do formulário -->
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucess.html">
+                <input type="hidden" name="_captcha" value="false">
+
                 <label for="nome">Nome</label>
                 <input id="nome" name="nome" type="text" placeholder="Digite seu nome completo">
                 <span id="txtNome"></span>
 
                 <label for="email">E-mail</label>
                 <input id="email" name="email" type="text" placeholder="Digite seu e-mail">
-                <span id="txtemail"></span>
+                <span id="txtEmail"></span>
 
                 <label for="assunto">Assunto</label>
                 <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto da mensagem."><!--Verificar o que required faz-->
@@ -135,5 +114,8 @@
     <footer>
         Feito com ❤️ por Jamila Moraes Cardoso - 2025 
     </footer>
+
+    <!-- Link para o arquivo JavaScript-->
+    <script src="./assets/js/scripts.js"></script>
 </body>
 </html>
