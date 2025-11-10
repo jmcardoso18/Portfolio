@@ -297,7 +297,208 @@ button{
     color: var(--gray-400);
     margin-bottom: 0;
 }
- 
+/* === HABILIDADES === */
+.habilidades_container {
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+    border-radius: 1rem;
+    max-width: 1120px;
+    padding: 2rem;
+}
+/* Título principal */
+.habilidades_content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--red-800);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Subtítulos de seções (ex: Front-end, Back-end, etc.) */
+.habilidades_list h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--red-700);
+    text-align: center;
+    margin: 1.5rem 0 1rem;
+    border-left: 4px solid var(--red-600);
+    padding-left: 0.5rem;
+}
+
+/* === GRID DE ÍCONES === */
+.icons_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    padding: 1rem 0 2rem;
+}
+
+/* Centralização dos ícones e textos */
+.icons_grid div {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    justify-content: center;  
+    text-align: center;       
+    gap: 0.5rem;              
+}
+
+/* Ícones padrão */
+.icons_grid i {
+    font-size: 3rem;
+    color: var(--gray-500);
+    transition: transform 0.3s ease, filter 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Ícones coloridos com leve sombra */
+.icons_grid i.colored {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* Hover com destaque em vermelho */
+.icons_grid i:hover {
+    transform: scale(1.2);
+    color: var(--red-600);
+    filter: brightness(1.2);
+}
+
+/* Seções de estatísticas ou pequenos textos descritivos */
+.habilidades_stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    color: var(--red-800);
+}
+
+.habilidade_item {
+    text-align: center;
+}
+
+.habilidade_item .stat-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--red-600);
+}
+
+.habilidade_item .stat-label {
+    font-size: 0.875rem;
+    color: var(--gray-400);
+}
+
+/* === SEÇÃO DE PROJETOS === */
+.projetos_container {
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    background-color: var(--gray-200);
+    border-radius: 1rem;
+    max-width: 1120px;
+    padding: 2rem;
+}
+
+.projetos_titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--red-700);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.swiper-slide:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+/* Swiper */
+.projetos_carrossel {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  overflow: hidden;
+}
+
+.projeto_card {
+  background: #da8181 !important; /* Vermelho padrão */
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 420px; /* 🔸 Altura fixa e uniforme */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.projeto_card img {
+  width: 100%;
+  height: 180px; 
+  border-radius: 50rem;
+  object-fit: cover;
+  display: block;
+}
+
+.projeto_card h3 {
+  color: var(--red-600);
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.projeto_card p {
+  font-size: 0.9rem;
+  color: var(--gray-600);
+}
+
+.btn_projeto {
+  display: inline-block;
+  background-color: var(--red-600);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn_projeto:hover {
+  background-color: var(--red-700);
+}
+
+.swiper-slide {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+/* Botões Swiper */
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--red-600);
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--red-600);
+}
+
+
 /* === CONTACT === */
 .contact_container{
     display: grid;
