@@ -56,7 +56,7 @@ Isso abrirá o site em seu navegador padrão, e você poderá visualizar e testa
 
 Este site está disponível publicamente através do **GitHub Pages**. Você pode acessar a versão online pelo link abaixo:
 
-- [Portfólio Pessoal](https://github.com/jmcardoso18)
+- [Portfólio Pessoal](https://jmcardoso18.github.io/Portfolio/)
 
 <br />
 
