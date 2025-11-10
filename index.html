@@ -20,7 +20,8 @@
     <meta name="robots" content="index, follow">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="https://ik.imagekit.io/u0isfvxls/portf%C3%B3lio/favicon.svg?updatedAt=1762763667006">
+    <link rel="icon" type="image/svg+xml"
+        href="https://ik.imagekit.io/u0isfvxls/portf%C3%B3lio/favicon.svg?updatedAt=1762763667006">
 
     <!-- Devicon (ícones de linguagens e ferramentas) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
@@ -30,7 +31,7 @@
 
     <!-- Swiper.js -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-        <!-- Link para o arquivo CSS-->
+    <!-- Link para o arquivo CSS-->
     <link rel="stylesheet" href="./assets/css/style.css">
 
 
@@ -43,12 +44,14 @@
     <header class="flex menu_container">
         <article class="menu_content">
             <div id="titulo">
-                <a href="#">Portfólio</a>
+                <a href="#">❤️  Portfólio da Mila ❤️ </a>
             </div>
             <nav>
                 <ul class="flex menu_list">
                     <li><a href="#hero">Início</a></li>
                     <li><a href="#about">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
@@ -61,15 +64,15 @@
         <section id="hero" class="hero_container">
             <article class="hero_content">
                 <h4>👋🏽 Olá, eu sou a Mila!</h4>
-                <h1>Desenvolvedora Full Stack</h1>
-                <p>Especialista em criar soluções digitais modernas, intuitivas e de alto desempenho. Explore meus
-                    projetos e entre em contato para construirmos algo incrível juntos.</p>
+                <h1>Desenvolvedora Full Stack - Java React</h1>
+                <p>Especialista em Estratégia e Código: Construindo Soluções Modernas e Intuitivas com Java e React.
+                </p>
                 <div class="hero_buttons flex">
                     <a href="#contact" class="botao">Vamos conversar</a>
                     <a href="#about" class="botao-outline">Saiba Mais...</a>
             </article>
             <figure class="hero_image">
-                <img src="https://ik.imagekit.io/u0isfvxls/portf%C3%B3lio/dreamina-2025-11-05-6438-Reference%20image%201,%20transform%20into%20a%20cart....jpeg?updatedAt=1762367021486"
+                <img src="https://ik.imagekit.io/u0isfvxls/portf%C3%B3lio/Portf.png?updatedAt=1762812965492"
                     alt="Ilustração com uma pessoa desenvolvedora escrevendo código" class="ilustracao float animation">
             </figure>
         </section>
@@ -174,7 +177,50 @@
             </article>
         </section>
         <!-- === PROJETOS === -->
-       
+        <section class="projetos_container" id="projetos">
+            <h2 class="projetos_titulo">🚀 Meus Projetos</h2>
+
+            <div class="swiper projetos_carrossel">
+                <div class="swiper-wrapper">
+                    <!-- Card 1 -->
+                    <div class="swiper-slide projeto_card">
+                        <img src="https://ik.imagekit.io/u0isfvxls/InovaHer/238466661.png?updatedAt=1761662985923"
+                            alt="Projeto 1">
+                        <h3>InovaHer</h3>
+                        <p>Repositório de uma empresa fictícia desenvolvida em grupo no Bootcamp Generation Brasil,
+                            unindo tecnologia e empoderamento feminino, contento 3 projetos.</p>
+                        <a href="https://github.com/InovaHer" class="btn_projeto" target="_blank">Ver Projeto</a>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide projeto_card">
+                        <img src="https://ik.imagekit.io/u0isfvxls/portf%C3%B3lio/ChatGPT%20Image%2010%20de%20nov.%20de%202025,%2004_37_58.png?updatedAt=1762760456798"
+                            alt="Projeto 2">
+                        <h3>Agenda de contatos</h3>
+                        <p>Desafio técnico desenvolvido na disciplina Desenvolvimento Web 3, com foco em Test-Driven
+                            Development (TDD) e Django Framework. </p>
+                        <a href="https://github.com/jmcardoso18/Pratica_TDD_4" class="btn_projeto" target="_blank">Ver
+                            Projeto</a>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide projeto_card">
+                        <img src="https://ik.imagekit.io/u0isfvxls/portf%C3%B3lio/ChatGPT%20Image%2010%20de%20nov.%20de%202025,%2004_40_12.png?updatedAt=1762760457120"
+                            alt="Projeto 3">
+                        <h3>Farmácia cura tudo</h3>
+                        <p>Desafio final de Back-End desenvolvido no Bootcamp da Generation Brasil, utilizando Java, JUnit, 
+                            Swagger e realizando deploy na plataforma Render.</p>
+                        <a href="https://github.com/jmcardoso18/projeto_final_bloco_02" class="btn_projeto"
+                            target="_blank">Ver Projeto</a>
+                    </div>
+                </div>
+
+                <!-- Botões e paginação -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
 
         <section id="contact" class="contact_container">
@@ -192,12 +238,10 @@
 
                 </div>
             </article>
-
             <form action="https://formsubmit.co/6bff33af4c7f1b054efb441c1494fe16" method="POST" id="formulario">
                 <!-- Redirecionar para a página de sucesso após o envio do formulário -->
-                <input type="hidden" name="_next" value="sucess.html">
+                <input type="hidden" name="_next" value="https://jmcardoso18.github.io/Portfolio/sucess.html">
                 <input type="hidden" name="_captcha" value="false">
-
                 <label for="nome">Nome</label>
                 <input id="nome" name="nome" type="text" placeholder="Digite seu nome completo">
                 <span id="txtNome"></span>

@@ -46,7 +46,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--white);
+    background-color: var(--red-50);
     color: var(--black-800)
 }
  
@@ -74,7 +74,7 @@ button{
 .botao{
     border: none;
     color: var(--white);
-    background-color: var(--red-600);
+    background: radial-gradient( rgb(55, 5, 6),rgb(222, 28, 44));
 }
  
 .botao:hover {
@@ -84,13 +84,14 @@ button{
 }
  
 .botao-outline{
+    
     border: 0.25rem solid var(--red-600);
     color: var(--red-600);
     background-color: transparent;
 }
  
 .botao-outline:hover {
-    background-color: var(--red-600);
+    background: radial-gradient(rgb(222, 28, 44), rgb(55, 5, 6));
     color: var(--white);
     box-shadow: var(--shadow-md);
     transform: translateY(-0.25rem);
@@ -103,8 +104,8 @@ button{
     top: 0;
     width: 100%;
     height: 5rem;
-    background-color: var(--red-800);
-    border-bottom: 0.5rem solid var(--gray-200);
+    background: linear-gradient( rgb(55, 5, 6),rgb(222, 28, 44));
+    border-bottom: 0.5rem solid var(--red-700);
     box-shadow: var(--shadow-sm);
     z-index: 1000;
 }
@@ -159,6 +160,7 @@ button{
 .hero_container {
     min-height: calc(100vh - 5rem);
     display: flex;
+    background-color: var(--red-50);
     align-items: center;
     gap: 4rem;
 }
@@ -186,6 +188,7 @@ button{
 .hero_content p {
     font-size: 1.125rem;
     line-height: 1.875rem;
+    text-align: justify;
     color: var(--gray-400);
 }
  
@@ -200,7 +203,6 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scaleX(-1);
 }
  
 .ilustracao {
@@ -233,7 +235,7 @@ button{
     display: flex;
     align-items: center;
     gap: 4rem;
-    background-color: var(--gray-200);
+    background-color: var(--red-100);
     border-radius: 1rem;
 }
  
@@ -283,6 +285,7 @@ button{
     flex-direction: row;
     gap: 2rem;
     margin-top: 2rem;
+    color: var(--red-600);
 }
  
 .stats-wrapper .stat-number {
@@ -294,7 +297,7 @@ button{
  
 .stats-wrapper .stat-label {
     font-size: 0.875rem;
-    color: var(--gray-400);
+    color: var(--red-600);
     margin-bottom: 0;
 }
 /* === HABILIDADES === */
@@ -304,7 +307,6 @@ button{
     align-items: center;
     justify-content: center;
     gap: 4rem;
-
     border-radius: 1rem;
     max-width: 1120px;
     padding: 2rem;
@@ -397,10 +399,10 @@ button{
 .projetos_container {
     margin: 2rem auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
-    background-color: var(--gray-200);
+    background-color: var(--red-200);
     border-radius: 1rem;
     max-width: 1120px;
     padding: 2rem;
@@ -424,6 +426,8 @@ button{
   margin: 0 auto;
   padding: 1rem 0;
   overflow: hidden;
+   width: 100%;
+  box-sizing: border-box;
 }
 
 .projeto_card {
@@ -433,22 +437,22 @@ button{
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start; 
   align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  height: 420px; /* 🔸 Altura fixa e uniforme */
+  min-height: 420px; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .projeto_card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
 .projeto_card img {
   width: 100%;
   height: 180px; 
-  border-radius: 50rem;
+  border-radius: 0.5rem; 
   object-fit: cover;
   display: block;
 }
@@ -456,23 +460,32 @@ button{
 .projeto_card h3 {
   color: var(--red-600);
   font-size: 1.2rem;
-  margin: 0;
+  /* Adiciona margin-top para separar da imagem, e margin-bottom para separar do texto */
+  margin: 1rem 0; 
 }
 
 .projeto_card p {
   font-size: 0.9rem;
   color: var(--gray-600);
+  text-align: justify;
+  /* --- CORREÇÃO: Gap não se usa em parágrafo, usa-se margin/padding --- */
+  margin-bottom: auto; /* IMPORTANTE: Empurra o botão para baixo, ocupando espaço restante */
+  margin-top: 0; /* Zera o topo, se necessário */
+  /* Removido: gap: 2rem; */
 }
 
 .btn_projeto {
   display: inline-block;
-  background-color: var(--red-600);
+  background: radial-gradient( rgb(55, 5, 6),rgb(222, 28, 44));
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   font-weight: 500;
   transition: background-color 0.3s ease;
   text-decoration: none;
+  /* --- Ajuste de Margem do Botão --- */
+  margin-top: 1rem; /* Margem apenas acima */
+  margin-bottom: 0; /* Garante que não haja margem extra abaixo */
 }
 
 .btn_projeto:hover {
@@ -531,7 +544,7 @@ button{
     width: 4rem;
     height: 4rem;
     padding: 0.75rem;
-    background-color: var(--gray-100);
+    background-color: var(--red-50);
     border-radius: 0.5rem;
     transition: all 0.3s ease;
 }
@@ -651,7 +664,7 @@ footer{
     text-align: center;
     padding: 2.5rem;
     font-weight: 600;
-    background: linear-gradient(to right top, var(--red-600), var(--red-800));
+    background: linear-gradient(to right top, rgb(55, 5, 6),rgb(222, 28, 44));
     color: var(--white);
     margin-top: auto;
 }
