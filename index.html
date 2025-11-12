@@ -31,6 +31,7 @@
 
     <!-- Swiper.js -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <!-- Link para o arquivo CSS-->
     <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -40,6 +41,8 @@
 
 <body>
 
+    <!-- O elemento onde o efeito vai ser aplicado -->
+    <div id="vanta-bg"></div>
     <!--Navbar - Menu-->
     <header class="flex menu_container">
         <article class="menu_content">
@@ -239,7 +242,7 @@
 
                 </div>
             </article>
-            <form action="https://formsubmit.co/6bff33af4c7f1b054efb441c1494fe16" method="POST" id="formulario">
+            <form action="https://formsubmit.co/jmc18.ads@gmail.com" method="POST" id="formulario">
                 <!-- Redirecionar para a página de sucesso após o envio do formulário -->
                 <input type="hidden" name="_next" value="https://jmcardoso18.github.io/Portfolio/sucess.html">
                 <input type="hidden" name="_captcha" value="false">
@@ -272,6 +275,31 @@
     </footer>
     <!-- Swiper e scripts -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Incluindo as bibliotecas necessárias -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        VANTA.BIRDS({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0xfaced8,
+            colorMode: "variance",
+            birdSize: 4.00,
+            wingSpan: 40.00,
+            speedLimit: 10.00,
+            separation: 100.00,
+            alignment: 100.00,
+            cohesion: 100.00
+        })
+
+    </script>
     <!-- Link para o arquivo JavaScript-->
     <script src="./assets/js/scripts.js"></script>
 </body>

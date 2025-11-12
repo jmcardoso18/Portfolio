@@ -136,6 +136,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
 //chamar a funcao para buscar os dados no github
 getApiGithub();

@@ -11,7 +11,7 @@
 /* === VARIÁVEIS === */
 :root {
     /* Cores */
---red-50:  #ffeaea;
+    --red-50:  #ffeaea;
     --red-100: #ffd5d5;
     --red-200: #f7b3b3;
     --red-300: #f08686;
@@ -43,13 +43,37 @@ html{
 }
  
 body{
+    /* Altura mínima de 100% da tela para o Vanta.js funcionar */
+    height: 100%; 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: var(--red-50);
-    color: var(--black-800)
+    color: var(--black-800);
+    /* **Correção Essencial:** Evita o scroll lateral e garante 100% de largura */
+    overflow-x: hidden;
 }
- 
+
+/* === VANTA.JS BACKGROUND (FUNDO) === */
+#vanta-bg {
+    position: fixed; /* Fixa o fundo na viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Garante 100% da altura visível (viewport) */
+    z-index: -1; /* Coloca o fundo atrás de todo o conteúdo */
+}
+
+/* Garante que o conteúdo (Header, Main, Footer) fique por cima do Vanta */
+header, main, footer {
+    position: relative;
+    z-index: 1; /* Deve ter um z-index maior que -1 */
+}
+
+/* Continua com a regra main original */
+main{
+    flex: 1;
+}
 main{
     flex: 1;
 }
@@ -163,6 +187,12 @@ button{
     background-color: var(--red-50);
     align-items: center;
     gap: 4rem;
+    margin: 2rem auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    max-width: 1120px;
+    padding: 2rem;
 }
  
 .hero_content {
@@ -304,9 +334,10 @@ button{
 .habilidades_container {
     margin: 2rem auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    background-color: var(--red-50);
     border-radius: 1rem;
     max-width: 1120px;
     padding: 2rem;
@@ -402,7 +433,7 @@ button{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--red-200);
+    background-color: var(--red-100);
     border-radius: 1rem;
     max-width: 1120px;
     padding: 2rem;
@@ -518,6 +549,14 @@ button{
     grid-template-columns: 1fr 1fr;
     margin: 4rem auto 2rem;
     gap: 4rem;
+    margin: 2rem auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--red-50);
+    border-radius: 1rem;
+    max-width: 1120px;
+    padding: 2rem;
 }
  
 .contact_info h4{
@@ -582,7 +621,7 @@ form input,
 textarea{
     width: 100%;
     padding: 0.75rem 1rem;
-    border: 0.25rem solid var(--gray-200);
+    border: 0.25rem solid var(--red-200);
     border-radius: 0.5rem;
     font-size: 1rem;
     background-color: var(--white);
@@ -609,13 +648,13 @@ form span{
  
 /* === SUCESS === */
 .sucess_container {
-    margin: 4rem auto;
+    margin: 2rem auto;
     width: fit-content;
     padding: 3rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
     background-color: var(--red-100);
     border-radius: 1rem;
 }
